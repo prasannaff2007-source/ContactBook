@@ -1,0 +1,8 @@
+# ---- Contact Book database settings ----
+# This is an example file.
+# Copy it to db.properties and put your real MySQL password there.
+# Never upload your real db.properties to GitHub.
+
+db.url=jdbc:mysql://localhost:3306/contactbook?serverTimezone=Asia/Kolkata&characterEncoding=UTF-8
+db.user=root
+db.password=YOUR_MYSQL_PASSWORD

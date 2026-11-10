@@ -1,0 +1,23 @@
+<%-- Shared page header. Each page must declare the "c" taglib BEFORE including this file. --%>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><c:out value="${pageTitle}" /> · Contact Book</title>
+    <link rel="stylesheet" href="${ctx}/css/style.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="container bar">
+        <a class="brand" href="${ctx}/contacts">
+            <span class="logo" aria-hidden="true">C</span>
+            <span>Contact Book</span>
+        </a>
+        <nav>
+            <a class="nav-link" href="${ctx}/contacts">Contacts</a>
+            <a class="btn btn-small btn-light" href="${ctx}/contacts/add">+ New contact</a>
+        </nav>
+    </div>
+</header>
